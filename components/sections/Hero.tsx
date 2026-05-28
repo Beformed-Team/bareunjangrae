@@ -28,15 +28,13 @@ export function Hero() {
           <p className="mb-6 inline-block border-l-2 border-gold pl-3 text-xs font-semibold uppercase tracking-[0.3em] text-gold">
             대전 · 충남 · 세종 · 청주
           </p>
-          <h1 className="text-balance font-serif text-4xl leading-[1.15] md:text-5xl lg:text-6xl">
-            거품 없는 정직한 장례,
-            <br />
-            <span className="text-gold">처음 그대로의 마음</span>으로
+          <h1 className="text-balance text-4xl leading-[1.2] md:text-5xl lg:text-[3.4rem]">
+            장례지도사 하루 <span className="text-gold">25만 원</span>,
+            <br className="hidden md:inline" /> 나머지는 영수증 그대로.
           </h1>
           <p className="mt-7 max-w-xl text-base leading-relaxed text-white/80 md:text-lg">
-            장례지도사 1일 25만 원 정찰제. 생화·상복·관·차량까지 모든
-            품목을 원가 실비 그대로 공개합니다. 중간 마진 없는 투명한 장례
-            서비스를 약속드립니다.
+            꽃, 상복, 관, 차량까지 거래처에서 받은 영수증 금액 그대로 정산합니다.
+            패키지 가격이나 중개 수수료는 따로 받지 않습니다.
           </p>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
@@ -67,7 +65,7 @@ export function Hero() {
             </span>
             <span className="inline-flex items-center gap-2">
               <span className="h-1.5 w-1.5 rounded-full bg-gold" />
-              현직 장례지도사 직접 운영
+              현장에서 일하는 장례지도사가 직접
             </span>
           </div>
         </motion.div>
@@ -92,14 +90,14 @@ export function Hero() {
               className="absolute inset-0 bg-gradient-to-t from-navy/70 via-navy/10 to-transparent"
             />
             <div className="absolute bottom-6 left-6 right-6 rounded-xl border border-gold/60 bg-navy/60 p-5 backdrop-blur">
-              <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gold">
-                정찰 인건비
+              <p className="text-xs font-semibold tracking-[0.25em] text-gold">
+                장례지도사 인건비
               </p>
-              <p className="mt-2 font-serif text-3xl text-white">
-                1일 250,000원
+              <p className="mt-2 text-3xl font-bold text-white">
+                하루 250,000원
               </p>
               <p className="mt-1 text-xs text-white/70">
-                패키지·중개 수수료 없음 · 모든 품목 원가 실비 정산
+                꽃·상복·관·차량은 거래처 영수증 금액 그대로
               </p>
             </div>
           </div>

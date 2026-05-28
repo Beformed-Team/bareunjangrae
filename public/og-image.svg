@@ -16,8 +16,8 @@
     <text x="110" y="32" font-family="'Noto Serif KR', serif" font-size="64" font-weight="600" fill="#FFFFFF">바른장례</text>
     <text x="110" y="74" font-family="sans-serif" font-size="20" fill="#C9A227" letter-spacing="6">BARUN FUNERAL</text>
   </g>
-  <text x="120" y="380" font-family="'Noto Serif KR', serif" font-size="44" fill="#FFFFFF">거품 없는 정직한 장례</text>
-  <text x="120" y="440" font-family="'Noto Serif KR', serif" font-size="44" fill="#FFFFFF">처음 그대로의 마음으로</text>
-  <text x="120" y="500" font-family="sans-serif" font-size="22" fill="#C9A227">대전 · 충남 · 세종 · 청주</text>
+  <text x="120" y="380" font-family="Pretendard, sans-serif" font-weight="700" font-size="48" fill="#FFFFFF">장례지도사 하루 25만 원,</text>
+  <text x="120" y="442" font-family="Pretendard, sans-serif" font-weight="700" font-size="48" fill="#FFFFFF">나머지는 영수증 그대로.</text>
+  <text x="120" y="500" font-family="Pretendard, sans-serif" font-size="22" fill="#C9A227">대전 · 충남 · 세종 · 청주</text>
   <rect x="120" y="540" width="56" height="2" fill="#C9A227" />
 </svg>

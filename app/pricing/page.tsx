@@ -10,23 +10,23 @@ import { Check } from "lucide-react";
 export const metadata: Metadata = {
   title: "금액 비교",
   description:
-    "바른장례의 정찰 인건비 25만 원과 원가 실비 정산 정책을, 일반 상조 패키지와 항목별로 비교해 드립니다. 패키지에 숨겨진 비용 없이 모든 금액을 공개합니다.",
+    "장례지도사 하루 25만 원과 거래처 영수증 그대로 정산하는 방식을, 일반 상조 패키지와 항목별로 비교해드립니다.",
 };
 
 const INCLUDED = [
-  "장례지도사 1일 25만 원 (정찰)",
-  "임종부터 발인까지 동행",
-  "거래처 영수증 100% 공개",
-  "꽃·상복·관·차량 원가 정산",
-  "24시간 상담 (상담료 무료)",
-  "사후 49재·납골 안내",
+  "장례지도사 인건비 하루 25만 원",
+  "임종부터 발인까지 옆에서 동행",
+  "거래처 영수증 그대로 공유",
+  "꽃·상복·관·차량은 원가 그대로 정산",
+  "24시간 상담 가능, 상담료 없음",
+  "장례 이후 49재·납골 안내",
 ];
 
 const EXCLUDED = [
-  "패키지·세트 가격 강제",
-  "중개 수수료·소개비",
-  "감춰진 옵션 추가금",
-  "기본 사양 외 차액 청구",
+  "패키지·세트 가격으로 묶어 권하는 것",
+  "중개 수수료나 소개비",
+  "기본 사양과 다르다고 청구하는 차액",
+  "야간 할증, 시간 단위 추가 청구",
 ];
 
 export default function PricingPage() {
@@ -34,16 +34,16 @@ export default function PricingPage() {
     <>
       <PageHeader
         eyebrow="금액 비교"
-        title="모든 금액을, 영수증 그대로 공개합니다"
-        description="장례지도 인건비는 1일 25만 원 정찰. 그 외 모든 품목은 원가 실비로만 정산하며 중간 마진을 붙이지 않습니다."
+        title="모든 비용을 영수증 그대로 알려드립니다"
+        description="장례지도 인건비는 하루 25만 원. 그 외 항목은 거래처에서 받은 영수증 금액 그대로 받고, 그 위에 따로 마진을 붙이지 않습니다."
       />
 
       <section className="bg-white py-20 md:py-28">
         <div className="container">
           <SectionHeading
             eyebrow="비교표"
-            title="바른장례 vs 일반 상조 패키지"
-            description="동일한 형식의 장례를 진행했을 때, 비용 구조가 어떻게 다른지 한눈에 보여드립니다."
+            title="바른장례와 일반 상조 패키지, 어떻게 다른가요?"
+            description="같은 규모의 장례를 진행했을 때, 비용이 어떤 구조로 잡히는지 한눈에 비교해드립니다."
           />
 
           <div className="mt-12">
@@ -61,11 +61,11 @@ export default function PricingPage() {
       <section className="bg-cream py-20 md:py-28">
         <div className="container grid gap-8 md:grid-cols-2">
           <div className="border border-gold bg-white p-8 md:p-10">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-gold">
+            <p className="text-xs font-semibold tracking-[0.25em] text-gold">
               포함됩니다
             </p>
-            <h3 className="mt-3 font-serif text-2xl text-navy">
-              25만 원에 포함되는 것
+            <h3 className="mt-3 text-2xl font-bold text-navy">
+              25만 원 안에 포함되는 것
             </h3>
             <ul className="mt-6 space-y-3 text-sm text-navy-500">
               {INCLUDED.map((x) => (
@@ -81,10 +81,10 @@ export default function PricingPage() {
           </div>
 
           <div className="border border-navy-100 bg-white p-8 md:p-10">
-            <p className="text-xs font-semibold uppercase tracking-[0.25em] text-navy-300">
+            <p className="text-xs font-semibold tracking-[0.25em] text-navy-300">
               하지 않습니다
             </p>
-            <h3 className="mt-3 font-serif text-2xl text-navy">
+            <h3 className="mt-3 text-2xl font-bold text-navy">
               바른장례에는 없는 것
             </h3>
             <ul className="mt-6 space-y-3 text-sm text-navy-500">
@@ -104,12 +104,12 @@ export default function PricingPage() {
 
       <section className="bg-white py-20 md:py-24">
         <div className="container text-center">
-          <h2 className="font-serif text-3xl text-navy md:text-4xl">
+          <h2 className="text-3xl font-bold text-navy md:text-4xl">
             지금 견적이 궁금하신가요?
           </h2>
           <p className="mt-4 text-navy-500">
-            상황을 알려주시면, 즉시 가능한 절차와 예상 금액을 정직하게
-            안내해드립니다.
+            상황을 알려주시면 어떻게 진행할 수 있는지, 금액은 어느 정도일지
+            먼저 알려드립니다.
           </p>
           <div className="mt-8">
             <Link href="/contact">

@@ -19,16 +19,16 @@ export function CTA() {
           />
           <div className="relative grid items-center gap-10 md:grid-cols-2">
             <div>
-              <p className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-gold">
-                24시간 카톡 상담
+              <p className="mb-4 text-xs font-semibold tracking-[0.3em] text-gold">
+                지금 상담 가능합니다
               </p>
-              <h2 className="font-serif text-3xl leading-tight md:text-4xl">
-                지금 이 순간에도, <br />
-                바른장례가 옆에 있습니다.
+              <h2 className="text-3xl leading-tight md:text-4xl">
+                급하신 상황이라면
+                <br className="hidden md:inline" /> 카톡으로 먼저 알려주세요.
               </h2>
               <p className="mt-5 max-w-md text-white/75">
-                상담료는 무료입니다. 가능한 절차와 예상 비용을, 의뢰 여부와
-                상관없이 정직하게 알려드립니다.
+                상담료는 받지 않습니다. 의뢰 여부와 관계없이 어떻게 진행할 수
+                있는지, 비용은 어느 정도 들지 미리 알려드립니다.
               </p>
             </div>
 

@@ -1,28 +1,13 @@
 import type { Metadata } from "next";
-import { Noto_Sans_KR, Noto_Serif_KR } from "next/font/google";
 import "@/styles/globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { SITE } from "@/lib/utils";
 
-const sans = Noto_Sans_KR({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-sans",
-  display: "swap",
-});
-
-const serif = Noto_Serif_KR({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-serif",
-  display: "swap",
-});
-
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: `${SITE.name} — 거품 없는 정직한 장례`,
+    default: `${SITE.name} | 장례지도사 하루 25만 원, 나머지는 영수증 그대로`,
     template: `%s | ${SITE.name}`,
   },
   description: SITE.description,
@@ -41,13 +26,13 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     url: SITE.url,
     siteName: SITE.name,
-    title: `${SITE.name} — 거품 없는 정직한 장례`,
+    title: `${SITE.name} | 장례지도사 하루 25만 원, 나머지는 영수증 그대로`,
     description: SITE.description,
     images: [{ url: "/og-image.svg", width: 1200, height: 630, alt: SITE.name }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE.name} — 거품 없는 정직한 장례`,
+    title: `${SITE.name} | 장례지도사 하루 25만 원, 나머지는 영수증 그대로`,
     description: SITE.description,
     images: ["/og-image.svg"],
   },
@@ -92,7 +77,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="ko" className={`${sans.variable} ${serif.variable}`}>
+    <html lang="ko">
       <body className="min-h-screen bg-white text-navy antialiased">
         <a
           href="#main"

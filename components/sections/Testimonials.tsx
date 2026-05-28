@@ -24,9 +24,9 @@ export function Testimonials() {
     <section className="bg-navy-gradient py-20 text-white md:py-28">
       <div className="container">
         <SectionHeading
-          eyebrow="유족의 목소리"
-          title="끝나고 나서야 진짜 평가가 시작됩니다"
-          description="장례를 마친 가족분들이 남겨주신 말씀입니다."
+          eyebrow="유족 후기"
+          title="장례를 마친 분들이 남겨주신 말씀"
+          description="장례를 치르고 시간이 지난 뒤, 가족분들이 보내주신 후기입니다."
           invert
         />
 

@@ -4,21 +4,21 @@ import { SectionHeading } from "@/components/layout/SectionHeading";
 const VALUES = [
   {
     icon: ShieldCheck,
-    title: "정찰 인건비",
+    title: "장례지도사 하루 25만 원",
     description:
-      "장례지도사 1일 25만 원, 시간 단위 추가 청구도 없습니다. 정해진 금액만큼만 받습니다.",
+      "1일 25만 원으로 받습니다. 시간 단위로 추가하거나 야간 할증을 붙이지 않습니다.",
   },
   {
     icon: Receipt,
-    title: "원가 실비 공개",
+    title: "꽃·상복·관·차량은 원가 그대로",
     description:
-      "꽃·상복·관·차량 모든 품목의 거래처 영수증을 그대로 공유합니다. 중간 마진 0원.",
+      "거래처에서 받은 영수증을 그대로 보여드리고, 그 금액으로만 정산합니다.",
   },
   {
     icon: HeartHandshake,
-    title: "유족 중심 진행",
+    title: "패키지 대신, 가족 일정에 맞춰",
     description:
-      "패키지가 아닌, 가족의 상황과 예산에 맞춰 필요한 부분만 함께 설계해 드립니다.",
+      "가족 규모와 예산을 듣고, 필요한 항목만 골라서 진행합니다.",
   },
 ];
 
@@ -27,9 +27,9 @@ export function Values() {
     <section id="values" className="bg-cream py-20 md:py-28">
       <div className="container">
         <SectionHeading
-          eyebrow="우리의 약속"
-          title="세 가지 기준으로 다르게 진행합니다"
-          description="장례라는 무거운 시간에 가격이 짐이 되지 않도록, 처음부터 끝까지 같은 기준을 지킵니다."
+          eyebrow="이렇게 일합니다"
+          title="이 세 가지는 처음부터 끝까지 그대로 갑니다"
+          description="장례 비용이 가족에게 또 다른 짐이 되지 않도록, 처음 안내한 금액과 실제 영수증을 똑같이 맞춥니다."
         />
 
         <ul className="mt-14 grid gap-6 md:grid-cols-3">

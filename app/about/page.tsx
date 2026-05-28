@@ -10,31 +10,31 @@ import { Award, Compass, Heart } from "lucide-react";
 export const metadata: Metadata = {
   title: "대표 소개",
   description:
-    "대전·충남·세종·청주 권역에서 활동 중인 현직 장례지도사가 직접 운영합니다. 거품 없는 정직한 장례를 만들어 가는 사람의 이야기를 전합니다.",
+    "대전·충남·세종·청주에서 활동 중인 장례지도사가 직접 운영합니다. 어떤 마음으로 시작했고 어떻게 일하는지 적어두었습니다.",
 };
 
 const VALUES = [
   {
     icon: Award,
-    title: "현직 장례지도사",
-    desc: "장례지도사 자격을 보유한 현장 실무자가 직접 응대하고, 장례를 처음부터 끝까지 함께 진행합니다.",
+    title: "현장 실무자가 직접",
+    desc: "지금도 현장에서 일하는 장례지도사가 첫 통화부터 정산까지 직접 진행합니다.",
   },
   {
     icon: Compass,
-    title: "지역 밀착 운영",
-    desc: "대전·충남·세종·청주의 식장·거래처를 잘 알고 있어, 가장 합리적인 동선과 견적을 제안합니다.",
+    title: "지역 거래처를 잘 압니다",
+    desc: "대전·충남·세종·청주 식장과 거래처를 오래 봐왔기 때문에, 동선과 견적을 무리 없이 잡아드립니다.",
   },
   {
     icon: Heart,
-    title: "유족 중심 설계",
-    desc: "패키지를 권하지 않습니다. 가족의 마음과 예산에 맞춰 필요한 항목만 골라 진행합니다.",
+    title: "패키지 대신, 필요한 것만",
+    desc: "패키지 가격으로 묶어 권하지 않습니다. 가족이 원하는 항목만 골라서 진행합니다.",
   },
 ];
 
 const TIMELINE = [
   {
     year: "현재",
-    body: "대전·충남·세종·청주 권역 현직 장례지도사로 활동하며 ‘바른장례’ 서비스를 운영하고 있습니다.",
+    body: "대전·충남·세종·청주 권역에서 장례지도사로 일하면서, 바른장례를 함께 운영하고 있습니다.",
   },
   {
     year: "{{경력 연도 입력 필요}}",
@@ -42,7 +42,7 @@ const TIMELINE = [
   },
   {
     year: "시작",
-    body: "‘장례에서 가장 무거운 짐은 슬픔이어야 한다’는 생각으로, 거품 없는 장례 서비스를 시작했습니다.",
+    body: "장례를 치르고 ‘이게 다 어디에 쓰인 돈인지’ 모르는 가족이 너무 많은 것을 보고, 모든 금액을 영수증 그대로 보여드리는 방식으로 일을 시작했습니다.",
   },
 ];
 
@@ -51,8 +51,8 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="대표 소개"
-        title="장례를 ‘서비스’가 아닌 ‘약속’으로 봅니다"
-        description="장례는 한 번뿐입니다. 그 한 번을 위해, 가격이 아닌 진심으로 평가받겠습니다."
+        title="한 번뿐인 장례, 후회 없이 보내드리고 싶습니다"
+        description="장례는 다시 치를 수 없기 때문에, 가족이 나중에 ‘이건 왜 그랬지’ 싶은 게 없도록 진행하는 것을 가장 중요하게 생각합니다."
       />
 
       <section className="bg-white py-20 md:py-28">
@@ -67,11 +67,11 @@ export default function AboutPage() {
                 className="object-cover"
               />
             </div>
-            <div className="absolute -bottom-6 -right-6 hidden bg-gold px-8 py-6 text-navy md:block">
-              <p className="font-serif text-2xl leading-tight">
-                정직이
+            <div className="absolute -bottom-6 -right-6 hidden rounded-xl bg-gold px-8 py-6 text-navy md:block">
+              <p className="text-xl leading-snug font-semibold">
+                무엇에 얼마가 쓰였는지
                 <br />
-                가장 큰 위로입니다
+                가족이 알 수 있어야 합니다.
               </p>
             </div>
           </div>
@@ -79,29 +79,28 @@ export default function AboutPage() {
           <div className="lg:col-span-7">
             <SectionHeading
               eyebrow="대표 인사말"
-              title="가격이 아닌, 진심으로 함께합니다"
+              title="‘이게 다 어디에 쓰인 돈이지?’ 라는 의문이 없도록"
             />
             <div className="mt-8 space-y-5 leading-relaxed text-navy-500">
               <p>
-                안녕하세요. 대전·충남·세종·청주 권역에서 활동 중인 현직
-                장례지도사입니다. ‘바른장례’는 패키지나 중개 수수료에 가려진
-                불투명한 비용을, 다시 가족의 손에 돌려드리기 위해 시작한
-                서비스입니다.
+                대전·충남·세종·청주에서 장례지도사로 일하고 있습니다. 현장에서
+                여러 가족을 모시다 보면, 장례를 다 치르고 나서야 ‘이게 다 어디에
+                쓰인 돈이지’ 하는 의문이 남는 경우를 자주 봤습니다. 그 부분이
+                마음에 걸려서 바른장례를 시작했습니다.
               </p>
               <p>
-                장례지도사 1일 인건비는 25만 원 정찰제로 받습니다. 그 외 생화·
-                상복·관·수의·차량 등 모든 품목은 거래처에서 받은 영수증을 그대로
-                보여드리고, 원가 실비로만 정산합니다. 어떤 가족이라도 무엇에
-                얼마가 쓰이는지를 정확히 알고 떠나보낼 수 있어야 한다고
-                믿습니다.
+                제 인건비는 하루 25만 원, 그것만 받습니다. 꽃·상복·관·수의·차량
+                같은 항목은 거래처에서 받은 영수증을 그대로 보여드리고, 그 금액
+                그대로 정산합니다. 어디에 얼마가 쓰였는지 가족이 끝까지 알 수
+                있어야 한다고 생각합니다.
               </p>
               <p>
-                슬픔이 가장 큰 시간을 함께하기에, 말은 줄이고 행동은 정확하게
-                하겠습니다. 가족의 마음과 예산에 가장 잘 맞는 형식을 찾도록
-                옆에서 돕겠습니다.
+                가장 슬픈 시간 옆에 서 있는 사람이라서, 말은 적게 하고 해야 할
+                일을 정확히 하려고 합니다. 가족이 원하는 규모와 예산에 맞춰
+                무리 없이 진행할 수 있도록 옆에서 돕겠습니다.
               </p>
-              <p className="font-serif text-lg text-navy">
-                — 바른장례 대표 장례지도사 {"{{대표 성함 입력 필요}}"}
+              <p className="text-lg font-semibold text-navy">
+                바른장례 대표 장례지도사 {"{{대표 성함 입력 필요}}"}
               </p>
             </div>
 
@@ -126,7 +125,7 @@ export default function AboutPage() {
         <div className="container">
           <SectionHeading
             eyebrow="걸어온 길"
-            title="장례지도사로서의 약속"
+            title="어떤 마음으로 시작했나요"
           />
 
           <ol className="mt-14 border-l border-navy-100 pl-6 md:pl-10">
