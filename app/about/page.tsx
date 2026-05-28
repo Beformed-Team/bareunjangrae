@@ -37,8 +37,8 @@ const TIMELINE = [
     body: "대전·충남·세종·청주 권역에서 장례지도사로 일하면서, 바른장례를 함께 운영하고 있습니다.",
   },
   {
-    year: "{{경력 연도 입력 필요}}",
-    body: "{{대표 약력 입력 필요 — 예: ○○대학교 장례지도학과 졸업, ○○상조 ○년 근무 등}}",
+    year: "경력",
+    body: "현장에서 여러 가족을 모시며 장례지도사로 일해왔습니다. 지역 식장과 거래처의 단가 구조를 직접 확인하면서, 가족이 놓치기 쉬운 항목까지 함께 챙기는 방식으로 일을 이어왔습니다.",
   },
   {
     year: "시작",
@@ -52,7 +52,13 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="대표 소개"
         title="한 번뿐인 장례, 후회 없이 보내드리고 싶습니다"
-        description="장례는 다시 치를 수 없기 때문에, 가족이 나중에 ‘이건 왜 그랬지’ 싶은 게 없도록 진행하는 것을 가장 중요하게 생각합니다."
+        description={
+          <>
+            장례는 다시 치를 수 없기 때문에.
+            <br />
+            후회없는 마지막을 보낼 수 있도록 도와드립니다.
+          </>
+        }
       />
 
       <section className="bg-white py-20 md:py-28">
@@ -100,7 +106,7 @@ export default function AboutPage() {
                 무리 없이 진행할 수 있도록 옆에서 돕겠습니다.
               </p>
               <p className="text-lg font-semibold text-navy">
-                바른장례 대표 장례지도사 {"{{대표 성함 입력 필요}}"}
+                바른장례 대표 장례지도사 드림
               </p>
             </div>
 

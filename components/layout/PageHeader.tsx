@@ -1,3 +1,5 @@
+import type { ReactNode } from "react";
+
 export function PageHeader({
   eyebrow,
   title,
@@ -5,7 +7,7 @@ export function PageHeader({
 }: {
   eyebrow: string;
   title: string;
-  description?: string;
+  description?: ReactNode;
 }) {
   return (
     <section className="relative overflow-hidden bg-navy-gradient">

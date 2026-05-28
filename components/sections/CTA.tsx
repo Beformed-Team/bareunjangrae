@@ -27,8 +27,7 @@ export function CTA() {
                 <br className="hidden md:inline" /> 카톡으로 먼저 알려주세요.
               </h2>
               <p className="mt-5 max-w-md text-white/75">
-                상담료는 받지 않습니다. 의뢰 여부와 관계없이 어떻게 진행할 수
-                있는지, 비용은 어느 정도 들지 미리 알려드립니다.
+                상담료는 받지 않습니다. 현상황에 맞게 진행가능한 상황과 비용에 대해서 우선적으로 말씀드립니다.
               </p>
             </div>
 

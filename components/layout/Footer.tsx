@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Instagram, MessageCircle, BookOpen, Phone, Mail } from "lucide-react";
+import { Phone } from "lucide-react";
 import { SITE } from "@/lib/utils";
 
 export function Footer() {
@@ -18,37 +18,10 @@ export function Footer() {
             />
           </div>
           <p className="max-w-md text-sm leading-relaxed text-white/70">
-            {SITE.description}
+            대전·충남·세종·청주에서 활동 중인 장례지도사가 직접 운영합니다.
+            <br />
+            인건비는 하루 25만 원, 꽃·상복·관·차량은 거래처에서 받은 영수증 금액 그대로 정산합니다.
           </p>
-          <div className="mt-6 flex items-center gap-3">
-            <a
-              href={SITE.sns.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="인스타그램"
-              className="inline-flex h-10 w-10 items-center justify-center border border-white/20 text-white/80 transition-colors hover:border-gold hover:text-gold"
-            >
-              <Instagram className="h-4 w-4" aria-hidden="true" />
-            </a>
-            <a
-              href={SITE.sns.kakao}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="카카오톡 채널"
-              className="inline-flex h-10 w-10 items-center justify-center border border-white/20 text-white/80 transition-colors hover:border-gold hover:text-gold"
-            >
-              <MessageCircle className="h-4 w-4" aria-hidden="true" />
-            </a>
-            <a
-              href={SITE.sns.blog}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="블로그"
-              className="inline-flex h-10 w-10 items-center justify-center border border-white/20 text-white/80 transition-colors hover:border-gold hover:text-gold"
-            >
-              <BookOpen className="h-4 w-4" aria-hidden="true" />
-            </a>
-          </div>
         </div>
 
         <div className="md:col-span-3">
@@ -91,12 +64,6 @@ export function Footer() {
                 className="hover:text-gold"
               >
                 {SITE.phone}
-              </a>
-            </li>
-            <li className="flex items-start gap-3">
-              <Mail className="mt-0.5 h-4 w-4 text-gold" aria-hidden="true" />
-              <a href={`mailto:${SITE.email}`} className="hover:text-gold">
-                {SITE.email}
               </a>
             </li>
             <li className="text-white/70">서비스 권역 · {SITE.region}</li>

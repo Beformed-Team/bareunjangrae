@@ -30,7 +30,7 @@ export function Process() {
         <SectionHeading
           eyebrow="진행 절차"
           title="전화 한 통부터 정산까지, 이렇게 진행됩니다"
-          description="각 단계에서 어떤 비용이 들고 어떤 비용이 들지 않는지 미리 말씀드리고 넘어갑니다."
+          description="각 단계에서 어떤 비용이 어떻게 사용되는지, 미리 말씀드리고 시작합니다."
         />
 
         <ol className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-navy-100 bg-navy-100 md:grid-cols-2 lg:grid-cols-4">

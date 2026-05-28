@@ -14,13 +14,7 @@ const schema = z.object({
     .string()
     .min(9, "연락처를 정확히 입력해 주세요.")
     .regex(/^[0-9\-+\s]+$/, "숫자와 - 만 입력 가능합니다."),
-  email: z
-    .string()
-    .email("올바른 이메일 형식이 아닙니다.")
-    .optional()
-    .or(z.literal("")),
   inquiryType: z.string().min(1, "문의 유형을 선택해 주세요."),
-  region: z.string().optional(),
   message: z.string().min(5, "문의 내용을 5자 이상 입력해 주세요."),
   consent: z.literal(true, {
     errorMap: () => ({ message: "개인정보 수집·이용에 동의해 주세요." }),
@@ -44,9 +38,7 @@ export function ContactForm() {
     defaultValues: {
       name: "",
       phone: "",
-      email: "",
       inquiryType: "",
-      region: "",
       message: "",
       consent: undefined as unknown as true,
     },
@@ -114,36 +106,6 @@ export function ContactForm() {
         </div>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2">
-        <div>
-          <Label htmlFor="email">이메일 (선택)</Label>
-          <Input
-            id="email"
-            type="email"
-            placeholder="name@example.com"
-            aria-invalid={!!errors.email}
-            aria-describedby={errors.email ? "email-err" : undefined}
-            {...register("email")}
-          />
-          {errors.email && (
-            <p id="email-err" className="mt-2 text-xs text-red-600">
-              {errors.email.message}
-            </p>
-          )}
-        </div>
-        <div>
-          <Label htmlFor="region">지역</Label>
-          <Select id="region" {...register("region")}>
-            <option value="">선택해 주세요</option>
-            <option value="daejeon">대전</option>
-            <option value="chungnam">충남</option>
-            <option value="sejong">세종</option>
-            <option value="cheongju">청주</option>
-            <option value="other">그 외</option>
-          </Select>
-        </div>
-      </div>
-
       <div>
         <Label htmlFor="inquiryType">
           문의 유형 <span className="text-gold">*</span>
@@ -200,8 +162,8 @@ export function ContactForm() {
               개인정보 수집·이용에 동의합니다.{" "}
             </span>
             <span className="text-navy-500">
-              (수집 항목: 성함·연락처·이메일·문의 내용 / 이용 목적: 장례 상담
-              및 안내 / 보유 기간: 상담 종료 후 1년)
+              (수집 항목: 성함·연락처·문의 내용 / 이용 목적: 장례 상담 및
+              안내 / 보유 기간: 상담 종료 후 1년)
             </span>
           </span>
         </label>
