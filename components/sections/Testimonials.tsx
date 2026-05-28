@@ -50,10 +50,6 @@ export function Testimonials() {
             </li>
           ))}
         </ul>
-
-        <p className="mt-8 text-center text-xs text-white/50">
-          * 후기는 유족 분들의 동의 하에 게재되며, 실제 사례 확보 후 교체됩니다.
-        </p>
       </div>
     </section>
   );

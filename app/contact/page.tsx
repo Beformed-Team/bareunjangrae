@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { Phone, MapPin, Clock } from "lucide-react";
 import { PageHeader } from "@/components/layout/PageHeader";
 import { ContactForm } from "@/components/sections/ContactForm";
 import { SITE } from "@/lib/utils";
@@ -46,16 +46,6 @@ export default function ContactPage() {
                 <div>
                   <p className="font-semibold text-navy">전화</p>
                   <p>{SITE.phone}</p>
-                </div>
-              </li>
-              <li className="flex items-start gap-3">
-                <Mail
-                  className="mt-0.5 h-4 w-4 shrink-0 text-gold"
-                  aria-hidden="true"
-                />
-                <div>
-                  <p className="font-semibold text-navy">이메일</p>
-                  <p>{SITE.email}</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
