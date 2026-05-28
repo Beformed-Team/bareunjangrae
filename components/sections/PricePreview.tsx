@@ -1,0 +1,36 @@
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { SectionHeading } from "@/components/layout/SectionHeading";
+import { PriceCompareTable } from "@/components/sections/PriceCompareTable";
+import { Button } from "@/components/ui/button";
+
+export function PricePreview() {
+  return (
+    <section className="bg-cream py-20 md:py-28">
+      <div className="container">
+        <SectionHeading
+          eyebrow="금액 비교"
+          title="일반 상조 패키지와 무엇이 다른가요?"
+          description="패키지에 숨겨진 항목 없이, 모든 비용을 영수증 그대로 공개합니다. 아래 비교표에서 확인하세요."
+        />
+
+        <div className="mt-12">
+          <PriceCompareTable />
+        </div>
+
+        <div className="mt-10 flex flex-col items-start gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-sm text-navy-500">
+            * 위 비교는 일반적인 시장가 기준이며, 실제 견적은 가족의 선택에 따라
+            달라집니다.
+          </p>
+          <Link href="/pricing">
+            <Button variant="outline">
+              자세한 금액 정책 보기
+              <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </Button>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}
