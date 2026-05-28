@@ -11,7 +11,7 @@ export function PricePreview() {
         <SectionHeading
           eyebrow="금액 비교"
           title="일반 상조 패키지와 어떻게 다른가요?"
-          description="패키지 가격에 묶이는 항목 없이, 발생한 비용만 영수증 그대로 받습니다. 항목별로 비교해보세요."
+          description="패키지 가격에 묶이는 항목 없이, 발생한 비용만 받습니다."
         />
 
         <div className="mt-12">

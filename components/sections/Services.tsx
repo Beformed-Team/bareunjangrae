@@ -38,7 +38,7 @@ export function Services() {
                 형식은 줄이고, 마음은 더합니다.
               </>
             }
-            description="어떤 규모로 모실지는 가족이 정합니다. 그 결정에 맞춰 실제 발생할 비용만 잡아 견적을 정리해드립니다."
+            description="규모만 고민하세요. 고객의 결정에 맞춰 실제 발생할 비용만 잡아 견적을 정리해드립니다."
           />
           <Link
             href="/contact"

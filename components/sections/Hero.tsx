@@ -34,6 +34,7 @@ export function Hero() {
           </h1>
           <p className="mt-7 max-w-xl text-base leading-relaxed text-white/80 md:text-lg">
             꽃, 상복, 관, 차량까지 거래처에서 받은 영수증 금액 그대로 정산합니다.
+            <br />
             패키지 가격이나 중개 수수료는 따로 받지 않습니다.
           </p>
 

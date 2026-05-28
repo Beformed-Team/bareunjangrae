@@ -18,7 +18,9 @@ export function Footer() {
             />
           </div>
           <p className="max-w-md text-sm leading-relaxed text-white/70">
-            {SITE.description}
+            대전·충남·세종·청주에서 활동 중인 장례지도사가 직접 운영합니다.
+            <br />
+            인건비는 하루 25만 원, 꽃·상복·관·차량은 거래처에서 받은 영수증 금액 그대로 정산합니다.
           </p>
         </div>
 

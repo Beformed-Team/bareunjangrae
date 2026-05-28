@@ -52,7 +52,13 @@ export default function AboutPage() {
       <PageHeader
         eyebrow="대표 소개"
         title="한 번뿐인 장례, 후회 없이 보내드리고 싶습니다"
-        description="장례는 다시 치를 수 없기 때문에, 가족이 나중에 ‘이건 왜 그랬지’ 싶은 게 없도록 진행하는 것을 가장 중요하게 생각합니다."
+        description={
+          <>
+            장례는 다시 치를 수 없기 때문에.
+            <br />
+            후회없는 마지막을 보낼 수 있도록 도와드립니다.
+          </>
+        }
       />
 
       <section className="bg-white py-20 md:py-28">
